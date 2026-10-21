@@ -1,52 +1,52 @@
-# Classificador de Nível de Herói — Java
+# Hero Level Classifier
 
-## Descrição do Projeto
+## Project Description
 
-Projeto desenvolvido como parte do desafio prático de lógica de programação da DIO, com o objetivo de classificar heróis de acordo com sua quantidade de pontos de experiência (XP), utilizando a linguagem Java.
+This project was developed as part of a hands-on programming logic challenge on DIO, with the goal of classifying heroes based on their experience points (XP) using the Java programming language.
 
-## Objetivo
+## Objective
 
-Implementar um algoritmo que determine o nível de um herói com base em intervalos de XP predefinidos e exiba uma mensagem contendo seu nome e o nível alcançado.
+Implement an algorithm that determines a hero's level based on predefined XP ranges and displays a message containing the hero's name and achieved level.
 
-## Conceitos Aplicados
+## Concepts Applied
 
-- **Variáveis e tipos de dados:** utilização de `String` para armazenar textos e `int` para representar a experiência do herói.
-- **Operadores relacionais:** aplicação dos operadores `<` e `<=` para avaliar os intervalos de XP.
-- **Estruturas condicionais:** utilização de `if`, `else if` e `else` para determinar o nível correspondente.
-- **Laços de repetição:** utilização de `while` para demonstrar o controle de fluxo com base em uma condição.
-- **Comparação de strings:** utilização do método `equals()` para verificar o conteúdo da variável de controle do laço.
-- **Formatação de strings:** utilização de `String.format()` e do especificador `%s` para construir a mensagem de saída de maneira legível.
-- **Saída no console:** utilização de `System.out.println()` para apresentar o resultado.
+- **Variables and data types:** Use of `String` to store text and `int` to represent the hero's experience points.
+- **Relational operators:** Use of the `<` and `<=` operators to evaluate XP ranges.
+- **Conditional statements:** Use of `if`, `else if`, and `else` to determine the corresponding level.
+- **Loops:** Use of `while` to demonstrate condition-based flow control.
+- **String comparison:** Use of the `equals()` method to compare the value of the loop control variable.
+- **String formatting:** Use of `String.format()` and the `%s` format specifier to construct a readable output message.
+- **Console output:** Use of `System.out.println()` to display the result.
 
-## Funcionamento
+## How It Works
 
-O programa inicializa as variáveis com o nome e a quantidade de XP do herói. Em seguida, avalia os intervalos de experiência por meio de estruturas condicionais, atribuindo o nível correspondente à variável `nivel`.
+The program initializes variables with the hero's name and XP value. It then evaluates the experience ranges using conditional statements and assigns the corresponding level to the `nivel` variable.
 
-Após a classificação, utiliza `String.format()` para construir a mensagem final e `System.out.println()` para exibi-la no console.
+After determining the hero's level, the program uses `String.format()` to build the final message and `System.out.println()` to display it in the console.
 
-A estrutura `while` demonstra o funcionamento de um laço de repetição condicionado ao valor da variável `continuar`. Na implementação atual, o laço executa apenas uma iteração, pois a variável recebe o valor `"não"` ao final da execução.
+The `while` loop demonstrates how repetition works based on the value of the `continuar` control variable. In the current implementation, the loop executes only once because the variable is assigned the value `"não"` at the end of the iteration.
 
-## Exemplo de Saída
+## Sample Output
 
 `O Herói de nome Luan está no nível de Platina`
 
-## Tecnologias
+## Technologies
 
 - Java
-- Git e GitHub
+- Git and GitHub
 
-## Aprendizados
+## Key Learnings
 
-O projeto reforça os fundamentos da lógica de programação e sua aplicação em Java, incluindo declaração de variáveis, operadores relacionais, estruturas condicionais, laços de repetição e formatação de strings. Também contribui para a compreensão das diferenças sintáticas entre JavaScript e Java.
+This project reinforces fundamental programming logic concepts and their application in Java, including variable declarations, relational operators, conditional statements, loops, and string formatting. It also helps develop an understanding of the syntactic differences between JavaScript and Java.
 
-## Observações Técnicas e Melhorias Futuras
+## Technical Notes and Future Improvements
 
-A implementação atual utiliza valores predefinidos para o nome e a quantidade de experiência (XP) do herói. O laço `while` foi incorporado para demonstrar o controle de fluxo por meio de estruturas de repetição, sendo encerrado após uma única iteração pela alteração da variável de controle `continuar`.
+The current implementation uses predefined values for the hero's name and experience points (XP). The `while` loop was included to demonstrate flow control through repetition structures and terminates after a single iteration when the `continuar` control variable is updated.
 
-Como potenciais melhorias futuras, propõe-se:
+Potential future improvements include:
 
-- **Entrada dinâmica de dados:** utilizar a classe `Scanner` para permitir que o usuário informe o nome e a quantidade de XP do herói durante a execução.
-- **Iteração de múltiplos registros:** adaptar o laço `while` para possibilitar a classificação de vários heróis em uma única execução.
-- **Controle de encerramento:** implementar uma condição de saída interativa, permitindo ao usuário decidir quando finalizar o programa.
-- **Validação de entradas:** verificar se a quantidade de XP informada é válida e tratar entradas incompatíveis com o tipo de dado esperado.
-- **Organização e reutilização do código:** encapsular a lógica de classificação em um método específico, favorecendo a legibilidade, a manutenção e a reutilização da implementação.
+- **Dynamic input:** Use the `Scanner` class to allow users to enter the hero's name and XP value during program execution.
+- **Multiple entries:** Adapt the `while` loop to support classifying multiple heroes in a single execution.
+- **Exit control:** Implement an interactive exit condition that allows users to decide when to terminate the program.
+- **Input validation:** Ensure that the entered XP value is valid and handle inputs that do not match the expected data type.
+- **Code organization and reusability:** Encapsulate the classification logic in a dedicated method to improve readability, maintainability, and code reuse.
